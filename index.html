@@ -15,23 +15,38 @@
         background-color: #95CC7A;
         font-size: 100%;
         font-family: 'Lucida Grande', arial, serif;
+        background:#93c09c url('images/linen-background.jpg') repeat right top;
+      }
+      #tippytop {
+        width: 100%;
+        height: 36px;
+        background:url('images/zigzag-top.gif') repeat-x right top;
       }
       .container {
-        background-color: rgba(111,135,99,0.7);
-        margin-top: 30px;
-        padding-top: 20px;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        color: white;
-        border: 3px solid rgba(255,255,255,1);
+        color: rgba(56,68,56,1);
+        background:url('images/scales-watermark.png') no-repeat center 10px;
+      }
+      .sep {
+        height: 26px;
+        background:url('images/swirly.png') no-repeat center top;
       }
       h1 { 
         margin-top: 0.5em; 
         font-family: 'Crimson Text', arial, serif;
         font-weight: bold;
-        font-size: 4em;
-        color: rgba(255,255,255,1);
+        font-size: 5em;
+        color: rgba(56,68,56,1);
         margin-bottom: 10px;
+      }
+      .title {
+        text-align: center;
+        background:url('images/double-dots.gif') no-repeat center 20px;
+      }
+      .phone{
+        text-align: center;
+        font-size: 4em;
+        font-family: 'Crimson Text', arial, serif;
+        padding-bottom: 20px;
       }
       .alt {
         color: rgba(255,255,255,0.7);
@@ -40,9 +55,10 @@
       }
 
       h2 { 
+        font-family: 'Crimson Text', arial, serif;
         color: rgba(255,255,255,0.7);
         padding-left: 5px;
-        font-size: 90%;
+        font-size: 110%;
       }
       hr {
         clear: both;
@@ -62,9 +78,6 @@
       .reviews {
         color: black;
       }
-      .logo-pogo {
-        padding-top: 50px;
-      }
       .footer {
         font-family: 'Cantarell', arial, serif;
         color: rgba(111,135,99,0.7);
@@ -72,7 +85,7 @@
         margin:0px auto;
         text-align:center;
         padding:15px;
-        font-size: 5pt;
+        font-size: 10pt;
       }
       .footer a {
         color: rgba(111,135,99,0.7);
@@ -85,41 +98,55 @@
 
   </head>
   <body>
+    <div id="tippytop">
+    </div>
+    <div class="title">
+      <h1>My Taxman</h1> 
+    </div>
+    <div class="sep"></div>
     <div class="container">
-      <div class="logo-pogo span-12 prepend-1 append-0">
-        <div class="logo">
-          <img alt="Captured Logo" src="scales.png" />
-        </div>
-      </div>
-      <div class="span-9 prepend-0">
-        <h1>My Taxman</h1> 
-        <h2>
+      <div class="span-10 prepend-2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="alt">
           Tax Preperation for the Greater Richmond Area
-        </h2>
-        <hr />
+        </p>
+      </div>
+      <div class="span-10 prepend-2 last">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+
+      <div class="span-10 prepend-2">
         <p>
           Why My Tax Man?
         </p>
         <p class="alt">
           Because.
         </p>
-        <hr />
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
       </div>
-      <div class="prepend-1 span-4">
-        <img src="profile.png" />
+      <hr>
+      <div class="span-24 last">
+        <div class="phone">
+          (804) 859-3905
+        </div>
       </div>
-      <div class="reviews append-1 span-7">
-        <br />
-        <p class="alt">
-          <b>Terry Anderson</b> <br />
-          Phone: (804) 859-3905 <br />
-          Fax: (804) 915-8893  <br />
+      <hr>
+      <div class="span-10 prepend-2">
+        <div class="span-4">
+          <img src="profile.png" />
+        </div>
+        <div class="span-6 last">
+          <br />
+          <p>
+            <b>Terry Anderson</b> <br />
+            Phone: (804) 859-3905 <br />
+            Fax: (804) 915-8893  <br />
 
-          Email: 
+            Email: <br /> 
 <a
 class='email
 href="mailto:x@y"
@@ -132,17 +159,19 @@ mailto:abuse@hotmail.com
 </a>
 -->&shy;xma&#110;&#x2d;va&#x2e;&#99;&#x6f;m</a>
           
-        </p>
+          </p>
+        </div>
       </div>
 
-      <div class="reviews span-10 last">
-        <hr />
+      <div class="reviews prepend-2 span-10 last">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
         </p>
       </div>
+
+      <hr>
     </div>
 
-    <div class="footer">&copy; My Tax Man, LLC. Built by Christopher Sexton from <a href="http://www.codeography.com/">Codeography</a></div>
+    <div class="footer">&copy; My Taxman, LLC. Built by Christopher Sexton from <a href="http://www.codeography.com/">Codeography</a></div>
   </body>
 </html>
